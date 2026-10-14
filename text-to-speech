@@ -1,0 +1,9 @@
+import gtts
+import playsound
+
+text = input("Enter the text:")
+
+sound = gtts.gTTS(text, lang="ur")
+
+sound.save("voice.mp3")
+playsound.playsound("voice.mp3")
